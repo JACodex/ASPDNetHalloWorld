@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yh9xwnr+89JEnqFkXmQrDfR803U11uICHMpCqK69boEAb8gAPQ9cY+Rnv7RC0EYNYp/7hJma97njLkJiJvNr5A==",
+  "dgSpecHash": "2QFp7x6yBLOnrRQ0jgdnKLUGsJSGdAdlrDdRYzQojbJmwlw+IalvcQK8lpl/ZAflUAoLh4CwhY+SWltQrmJTlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jlync\\source\\repos\\HelloASPDnetWorld\\HelloASPDnetWorld.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jlync\\.nuget\\packages\\bootstrap\\5.1.3\\bootstrap.5.1.3.nupkg.sha512"
+  ],
   "logs": []
 }
