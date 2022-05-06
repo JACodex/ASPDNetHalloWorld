@@ -6,6 +6,7 @@ namespace HelloASPDnetWorld.Controllers
 {
     public class HomeController : Controller
     {
+        
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,7 +16,10 @@ namespace HelloASPDnetWorld.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            string[] foods = new string[] {"Eggs", "bacon", "sausage"};
+            ViewBag.Name = "Joshua Lynch";
+            ViewBag.Foods = foods;
+            return View("../Hello/Hello");
         }
 
         public IActionResult Privacy()

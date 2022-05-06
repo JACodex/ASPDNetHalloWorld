@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HelloASPDnetWorld.Controllers
 {
+    [Route("/waddupworld")]
     public class HelloController1 : Controller
     {
         // GET: HelloController1
         [HttpGet]
-        [Route("/waddupworld/")]
         public IActionResult Index()
         {
             string html = "<h1>Waddup World</h1>"+
@@ -19,19 +19,30 @@ namespace HelloASPDnetWorld.Controllers
         }
 
         // endpoint url  /helloController1/results
-        public IActionResult Results()
-        {
-            string  results = "<p style='color: red'>string of results<p>";
-            return Content(results, "text/html");
+        //public IActionResult Results()
+        //{
+        //    string  results = "<p style='color: red'>string of results<p>";
+        //    return Content(results, "text/html");
 
-        }
-        [HttpPost("/waddupworld/{name?}")]
+        //}
+
+        //[HttpGet("/country/{country?}")]
+        //public IActionResult TestRoute(string country = "germany")
+        //{
+        //    string selectedCountry = $"<h1>{country}</h1>";
+        //    return Content(selectedCountry, "text/html");
+        //}
+
+        [HttpGet("/waddupworld/{name?}")]
+        [HttpPost]
         // GET: HelloController1/Details/5
-        public ActionResult Details(string name)
+        public ActionResult Details(string name = "world")
         {
             string html = $"<h1 style='color: red'>{name}</h1>";
             return Content(html, "text/html");
         }
+
+   
 
         //    // GET: HelloController1/Create
         //    public ActionResult Create()
